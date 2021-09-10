@@ -1,0 +1,7 @@
+{
+  "name": "study-tracker",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
