@@ -7,15 +7,29 @@
       <ion-item>
         <ion-label>Start Time</ion-label>
         <ion-datetime
+        placeholder="Set"
           displayFormat="HH:mm"
           [(ngModel)]="startStudingTime"
+          [style.padding]="'5px 20px'"
+        [style.margin]="'0 auto'"
+        [style.border]="'2px solid #ff0f9b'"
+        [style.border-radius]="'5px'"
+        [style.text-align]="'center'"
+        [style.width]="'40%'"
         ></ion-datetime>
       </ion-item>
       <ion-item>
         <ion-label>End Time</ion-label>
         <ion-datetime
+        placeholder="Set"
           displayFormat="HH:mm"
           [(ngModel)]="endStudingTime"
+          [style.padding]="'5px 20px'"
+          [style.margin]="'0 auto'"
+          [style.border]="'2px solid #ff0f9b'"
+          [style.border-radius]="'5px'"
+          [style.text-align]="'center'"
+          [style.width]="'40%'"
         ></ion-datetime>
       </ion-item>
       <ion-button

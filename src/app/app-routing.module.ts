@@ -5,7 +5,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabnav/tabnav.module').then(m => m.TabnavPageModule)
-  }
+  },
 
 ];
 

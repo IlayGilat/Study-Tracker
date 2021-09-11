@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>settings</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Desirable Study Time</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-datetime
+        [style.padding]="'5px 20px'"
+        [style.margin]="'0 auto'"
+        [style.border]="'2px solid #ff0f9b'"
+        [style.border-radius]="'5px'"
+        [style.text-align]="'center'"
+        [style.width]="'30%'"
+        displayFormat="HH:mm"
+        [(ngModel)]="desirableTime"
+        (ionChange)="onDesirableTimeChange()"
+      ></ion-datetime>
+    </ion-card-content>
+  </ion-card>
+
+<ion-card>
+  <ion-card-header >
+    <ion-card-title [style.justify-content]="'space-between'" [style.display]="'flex'">
+      <ion-label>About</ion-label>
+  <ion-icon (click)="openAbout()" name="add-circle"></ion-icon>
+    </ion-card-title>
+  </ion-card-header>
+</ion-card>
 
 </ion-content>
