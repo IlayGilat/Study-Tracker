@@ -1,0 +1,8 @@
+<ion-card>
+  <ion-card-header [style.display]="'flex'" [style.justify-content]="'space-between'">
+    <ion-card-title>{{task.text}}</ion-card-title>
+    <ion-checkbox color="primary" [(ngModel)]="task.done" (ionChange)="onCheking()" color="success"></ion-checkbox>
+  </ion-card-header>
+
+
+</ion-card>

@@ -1,0 +1,40 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Study Hours</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label>Start Time</ion-label>
+        <ion-datetime
+          displayFormat="HH:mm"
+          [(ngModel)]="startStudingTime"
+        ></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label>End Time</ion-label>
+        <ion-datetime
+          displayFormat="HH:mm"
+          [(ngModel)]="endStudingTime"
+        ></ion-datetime>
+      </ion-item>
+      <ion-button
+        (click)="onSubmitStudyHours()"
+        color="primary"
+        [style.width]="'100%'"
+        [style.height]="'40px'"
+        [style.margin-top]="'5px'"
+        >Add</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>School Tasks</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <app-tasks></app-tasks>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

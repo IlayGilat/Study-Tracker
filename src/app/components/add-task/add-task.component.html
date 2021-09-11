@@ -1,0 +1,10 @@
+<form (ngSubmit)="onSubmit()" [style.padding]="'5px 20px'" [style.border]="'2px solid #292929'" [style.border-radius]="'5px'" >
+  <ion-input
+    class="inpt"
+    type="text"
+    [(ngModel)]="text"
+    [ngModelOptions]="{ standalone: true }"
+    placeholder="Add School Task"
+    [style.border-bottom]="'5px'"
+  ></ion-input>
+</form>
