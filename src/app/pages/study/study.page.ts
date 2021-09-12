@@ -18,9 +18,12 @@ export class StudyPage implements OnInit {
     //console.log(new Date().toDateString());
     const today = new Date().toDateString();
     if(today !== await this.storage.get('Date')){
-      this.storage.set('timeStudied',0);
-      this.storage.set('myTasks',[]);
-      this.storage.set('Date',today);
+      console.log('sad');
+      await this.storage.set('timeStudied',0);
+      await this.storage.set('myTasks',[]);
+      await this.storage.set('Date',today);
+    }else{
+
     }
     //if(new Date().getUTCDate())
 
